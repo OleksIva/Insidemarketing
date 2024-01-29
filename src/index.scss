@@ -7,7 +7,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Montserrat', sans-serif;
+  // font-weight: 400;
+  line-height: 1.5rem;
+}
+
+
+
+@media (min-width: 640px) and (max-width: 899px) {
+
+}
+
+
+@media (min-width: 880px) and (max-width: 1250px) {
+
+}
+
+
+@media (min-width: 1250px)  {
+
 }
