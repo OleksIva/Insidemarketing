@@ -171,3 +171,106 @@
     padding-right: 2px;
 
 }
+
+
+
+
+
+@media (min-width: 640px) {
+    .credit-card__offer-button {
+        width: 168px;
+        align-self: end;
+    }
+    .credit-card {
+        &__actions {
+            &>.credit-card__more-info-button {
+                margin-top: 25px;
+            }
+        }
+        &__details {
+            &>.credit-card__annual-fee {
+                span {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 880px) and (max-width: 1250px) {
+    .card-list__wrapper {
+        padding: 0 30px;
+        h1 {
+    
+        }
+    }
+    
+    .credit-card {
+        &__container {
+            // height: 190px;
+            flex-flow: column;
+        }
+    
+        &__img-name { 
+    
+            &>img {
+            }
+    
+            &>.credit-card__title {
+            }
+        }
+    
+        &__rating {
+        }
+    
+        &__details {
+            &>.credit-card__features {
+    
+    
+                &>.credit-card__feature {
+                    padding: 0;
+                }
+            }
+    
+            &>.credit-card__annual-fee {
+                span {
+                }
+                p {
+                }
+            }
+        }
+    
+        &__actions {
+    
+            &>.credit-card__offer-button,
+            &>.credit-card__more-info-button {
+                
+            }
+    
+            &>.credit-card__offer-button {
+            }
+    
+            &>.credit-card__more-info-button {
+                img {
+                }
+            }
+        }
+        &__dropdown {
+        }
+    }
+
+}
+
+
+@media (min-width: 1250px)  {
+    .credit-card {
+        &__container {
+            // height: 190px;
+            width: 1200px;
+            flex-flow: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        }
+}

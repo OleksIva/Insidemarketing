@@ -289,7 +289,3 @@ const Card = ({ cardData }) => {
 
 export default Card;
 
-
-
-
-
