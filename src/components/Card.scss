@@ -1,19 +1,33 @@
+.card-list__wrapper {
+    background: rgb(234, 234, 234);
+    h1 {
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: center;
+        padding: 50px 5%;
+        line-height: 48px;
+        margin-top: 0;
+
+    }
+}
+
 .credit-card {
     &__container {
         width: 100%;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        padding: 15px 15px 0;
+        border-radius: 20px;
         margin-bottom: 30px;
         display: flex;
         // flex-direction: column; 
         flex-wrap: wrap;
+        background: white;
+        justify-content: space-between;
     }
 
     &__img-name {
-        margin-top: 10px; 
+        padding-top: 25px;
+        padding-left: 15px; 
         flex-basis: calc(70% - 10px); 
-  margin: 5px; 
 
         &>img {
             border-radius: 4px; 
@@ -24,11 +38,17 @@
             font-weight: bold;
             font-size: 18px;
             color: #333333; 
+            margin: 0;
+            font-size: 12px;
+            font-weight: 800;
+            line-height: 1rem;
         }
     }
 
     &__rating {
-        align-self: center;
+        align-self: start;
+        margin-top: 30px;
+        margin-right: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,6 +59,8 @@
         color: #333333;
         font-weight: bold;
         margin-bottom: 20px;
+        background: none;
+        font-size: 30px;
         // flex-basis: calc(30% - 10px); 
     }
 
@@ -48,24 +70,44 @@
         &>.credit-card__features {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 20px 0;
             flex-basis: calc(70% - 10px);
-        margin: 5px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        padding: 0 15px;
+
 
             &>.credit-card__feature {
                 // background: #F2F2F2; 
-                margin-bottom: 10px; 
-                padding: 10px;
+                // margin-bottom: 10px; 
                 border-radius: 4px;
+                padding: 5px 0;
+                font-size: 14px;
             }
         }
 
         &>.credit-card__annual-fee {
             font-weight: bold;
-            font-size: 24px;
             color: #333333;
             margin: 20px 5px; 
             flex-basis: calc(30% - 10px); 
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;   
+            text-align: right;
+            padding-right: 10px;
+            align-self: center;
+            span {
+                font-size: 25px;
+                transform: scaleX(0.9);
+                display: inline-block;
+                font-weight: 700;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                margin-right: 8px;
+            }
         }
     }
 
@@ -93,17 +135,39 @@
         }
 
         &>.credit-card__offer-button {
-            background: #0061A8; 
+            background: #072ade; 
+            margin: 0 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
         }
 
         &>.credit-card__more-info-button {
-            background: #E8E8E8;
+            border-top: solid rgb(204, 204, 204) 1px;
+            background: none;
+            margin: 10px 15px 0;
             color: #333333; 
             text-align: center;
             justify-content: center;
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: 500;
+            img {
+                transform: translateY(4.5px);
+                padding-left: 2px;
+            }
         }
     }
     &__dropdown {
         width: 100%;
+        overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
     }
+}
+
+
+.bulletpointsTick {
+    transform: translateY(4.5px);
+    padding-right: 2px;
+
 }
